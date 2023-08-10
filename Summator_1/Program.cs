@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-var count = int.Parse(Console.ReadLine().ToString());
+﻿var count = int.Parse(Console.ReadLine().ToString());
 var results = new List<int>();
 
 for (int i = 0; i < count; i++)
