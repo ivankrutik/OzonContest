@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
     class Program
     {
         class TimePointComparer : IComparer<TimePoint>
         {
             public int Compare(TimePoint x, TimePoint y)
-            { return x.Time != y.Time ? x.Time.CompareTo(y.Time) : x.Task.CompareTo(y.Task); }
+            { 
+                return x.Time != y.Time ? x.Time.CompareTo(y.Time) : x.Task.CompareTo(y.Task);
+            }
         }
 
         class TimePoint
